@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fernando Acevedo — Software Engineering Student and Software Engineer Intern building scalable systems, automation workflows, and production-ready software." />
+  <meta name="keywords" content="Fernando Acevedo, Software Engineer, Portfolio, Auburn University, Robotics, Full Stack, Data Systems" />
+  <meta name="author" content="Fernando Acevedo" />
+  <meta property="og:title" content="Fernando Acevedo | Portfolio" />
+  <meta property="og:description" content="Software Engineering Student | Software Engineer Intern" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fernando-ace.github.io" />
+  <meta name="theme-color" content="#111827" />
+  <title>Fernando Acevedo | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="#home">Fernando Acevedo</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="mobile-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero section">
+      <div class="container">
+        <p class="eyebrow">Software Engineering Student | Software Engineer Intern</p>
+        <h1>Fernando Acevedo</h1>
+        <p class="hero-subtitle">I build scalable software, automate engineering workflows, and deliver production-ready systems that create measurable impact.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="assets/resume/Fernando_Acevedo_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2>About</h2>
+        <p>I am a software engineering student at Auburn University (B.S. Software Engineering, expected May 2028) and a U.S. citizen. I have experience across robotics, automation, full-stack development, and data systems. I enjoy building scalable systems, automating workflows, and shipping software that moves teams faster.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="card">
+            <h3>Software Engineer Intern — Tennibot</h3>
+            <p class="meta">Aug 2025 – Feb 2026 · Auburn, AL</p>
+            <ul>
+              <li>Designed automated provisioning pipelines for autonomous robots, reducing setup time from hours to minutes.</li>
+              <li>Built containerized Linux calibration pipelines (Ubuntu 22.04, Docker, RViz), improving sensor and camera accuracy by ~5%.</li>
+              <li>Developed Python automation for video ingestion and CVAT-based labeling workflows, generating 10,000+ labeled images.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Data Analyst Intern — Altec</h3>
+            <p class="meta">May 2025 – Aug 2025 · Birmingham, AL</p>
+            <ul>
+              <li>Migrated 90+ dashboards to Qlik Cloud.</li>
+              <li>Optimized SQL logic to reduce RAM usage by 32% while maintaining sub-second latency.</li>
+              <li>Built custom JSON/CSS themes and integrated AI chatbot features.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Data Analyst Intern — HICA</h3>
+            <p class="meta">May 2024 – Aug 2024 · Homewood, AL</p>
+            <ul>
+              <li>Designed a relational database schema consolidating 20+ years of legacy data.</li>
+              <li>Built Tableau dashboards that improved operational visibility.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="card project-card">
+            <h3>TecsPacs</h3>
+            <p>Full-stack snippet manager spanning a web app, CLI, and VS Code extension with shared APIs and centralized authentication.</p>
+            <div class="badges" aria-label="Tech stack">
+              <span>React</span><span>Node</span><span>Express</span><span>MongoDB</span><span>Auth0</span>
+            </div>
+            <div class="actions">
+              <a class="btn btn-small" href="https://github.com/fernando-ace" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-small btn-ghost" href="#" aria-label="Live demo placeholder for TecsPacs">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <h3>TaskFlow</h3>
+            <p>Full-stack task manager with JWT-secured APIs and cloud deployment across Vercel and Railway.</p>
+            <div class="badges" aria-label="Tech stack">
+              <span>React</span><span>Spring Boot</span><span>PostgreSQL</span><span>JWT</span>
+            </div>
+            <div class="actions">
+              <a class="btn btn-small" href="https://github.com/fernando-ace" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-small btn-ghost" href="#" aria-label="Live demo placeholder for TaskFlow">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <h3>ETL Pipeline</h3>
+            <p>Python and Snowflake ETL pipeline that processed 550k+ records with automated validation and logging.</p>
+            <div class="badges" aria-label="Tech stack">
+              <span>Python</span><span>Snowflake</span><span>ETL</span><span>Data Validation</span>
+            </div>
+            <div class="actions">
+              <a class="btn btn-small" href="https://github.com/fernando-ace" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="card"><h3>Languages</h3><p>Java, Python, C++, JavaScript, TypeScript, SQL, Bash</p></article>
+          <article class="card"><h3>Frameworks</h3><p>Spring, Node.js, Express, React, Tailwind</p></article>
+          <article class="card"><h3>Databases</h3><p>PostgreSQL, MongoDB, Snowflake</p></article>
+          <article class="card"><h3>Tools</h3><p>Docker, Linux, Git, Auth0, Railway, Vercel, CVAT, RViz</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section reveal">
+      <div class="container">
+        <h2>Leadership &amp; Awards</h2>
+        <ul class="highlights card">
+          <li>President, Hoover High Robotics — Led 50+ students and managed a $5K+ budget.</li>
+          <li>ICPC 3rd Place</li>
+          <li>HSF Scholar</li>
+          <li>Alabama Data Scholar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Let’s connect about software engineering internships and full-time opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:fernando.acevedo@example.com">Email</a>
+          <a href="https://linkedin.com/in/fernando-ace" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/fernando-ace" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-secondary" href="assets/resume/Fernando_Acevedo_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Fernando Acevedo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
