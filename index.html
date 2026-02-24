@@ -43,7 +43,7 @@
         <p class="hero-subtitle">I build scalable software, automate engineering workflows, and deliver production-ready systems that create measurable impact.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="assets/resume/Fernando_Acevedo_Resume.pdf" download>Download Resume</a>
+          <a class="btn btn-secondary" href="assets/resume/Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
         </div>
       </div>
     </section>
@@ -55,37 +55,33 @@
       </div>
     </section>
 
-    <section id="experience" class="section reveal">
+    <section id="experience" class="section reveal experience-section">
       <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <article class="card">
-            <h3>Software Engineer Intern — Tennibot</h3>
-            <p class="meta">Aug 2025 – Feb 2026 · Auburn, AL</p>
-            <ul>
+        <div class="experience-intro">
+          <h2>Experience</h2>
+          <p>Interactive timeline highlights the roles where I shipped automation, data, and robotics systems. Click through any node to see the story, metrics, and tools that defined each engagement.</p>
+        </div>
+        <div class="experience-interactive">
+          <div class="experience-timeline" role="tablist" aria-label="Work timeline" data-experience-timeline>
+            <p class="timeline-fallback">Select a role to explore the work.</p>
+          </div>
+          <article class="experience-panel card" aria-live="polite">
+            <div class="experience-panel__header">
+              <p class="meta" data-experience-period>Aug 2025 – Feb 2026 · Auburn, AL</p>
+              <h3 data-experience-title>Software Engineer Intern — Tennibot</h3>
+              <p class="meta" data-experience-location>Auburn, AL</p>
+            </div>
+            <p class="experience-summary" data-experience-summary>Led robotics provisioning, calibration, and data tooling to accelerate release cycles for autonomous mowers.</p>
+            <ul class="experience-highlights" data-experience-highlights>
               <li>Designed automated provisioning pipelines for autonomous robots, reducing setup time from hours to minutes.</li>
               <li>Built containerized Linux calibration pipelines (Ubuntu 22.04, Docker, RViz), improving sensor and camera accuracy by ~5%.</li>
               <li>Developed Python automation for video ingestion and CVAT-based labeling workflows, generating 10,000+ labeled images.</li>
             </ul>
-          </article>
-
-          <article class="card">
-            <h3>Data Analyst Intern — Altec</h3>
-            <p class="meta">May 2025 – Aug 2025 · Birmingham, AL</p>
-            <ul>
-              <li>Migrated 90+ dashboards to Qlik Cloud.</li>
-              <li>Optimized SQL logic to reduce RAM usage by 32% while maintaining sub-second latency.</li>
-              <li>Built custom JSON/CSS themes and integrated AI chatbot features.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Data Analyst Intern — HICA</h3>
-            <p class="meta">May 2024 – Aug 2024 · Homewood, AL</p>
-            <ul>
-              <li>Designed a relational database schema consolidating 20+ years of legacy data.</li>
-              <li>Built Tableau dashboards that improved operational visibility.</li>
-            </ul>
+            <div class="experience-impact" data-experience-impact>Provisioning automation freed more than four hours per deployment while boosting data quality for CV/ML work.</div>
+            <div class="experience-tags" data-experience-tags>
+              <span>Python</span><span>Docker</span><span>ROS</span><span>Linux</span><span>OpenCV</span>
+            </div>
+            <p class="experience-focus" data-experience-focus>Focus: Robotics Systems &amp; Automation</p>
           </article>
         </div>
       </div>
@@ -161,12 +157,12 @@
       <div class="container">
         <h2>Contact</h2>
         <p>Let’s connect about software engineering internships and full-time opportunities.</p>
-        <div class="contact-links">
-          <a href="mailto:fernando.acevedo@example.com">Email</a>
-          <a href="https://linkedin.com/in/fernando-ace" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/fernando-ace" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn-secondary" href="assets/resume/Fernando_Acevedo_Resume.pdf" download>Download Resume</a>
-        </div>
+          <div class="contact-links">
+            <a href="mailto:fernandojosueacevedo@example.com">Email</a>
+            <a href="https://linkedin.com/in/fernando-ace" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/fernando-ace" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="assets/resume/Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+          </div>
       </div>
     </section>
   </main>
