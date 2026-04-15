@@ -35,7 +35,7 @@ const experienceEntries = [
     company: 'Tennibot',
     period: 'Aug 2025 – Feb 2026',
     location: 'Auburn, AL',
-    summary: 'Led robotics provisioning, calibration, and data tooling to accelerate release cycles for autonomous mowers.',
+    summary: 'Led robotics provisioning, calibration, and data tooling to accelerate release cycles for autonomous Tennis & Pickleball Robots.',
     highlights: [
       'Designed automated provisioning pipelines for autonomous robots, reducing setup time from hours to minutes.',
       'Built containerized Linux calibration pipelines (Ubuntu 22.04, Docker, RViz), improving sensor and camera accuracy by ~5%.',
@@ -65,7 +65,7 @@ const experienceEntries = [
     company: 'HICA',
     period: 'May 2024 – Aug 2024',
     location: 'Homewood, AL',
-    summary: 'Consolidated decades of healthcare operations data into a modern warehouse with dashboards that surfaced trends.',
+    summary: 'Consolidated decades of client data into a modern warehouse with dashboards that improved community outreach.',
     highlights: [
       'Designed a relational database schema consolidating 20+ years of legacy data.',
       'Built Tableau dashboards that improved operational visibility.',
