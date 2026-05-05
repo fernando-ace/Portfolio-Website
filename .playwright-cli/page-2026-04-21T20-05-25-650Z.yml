@@ -1,0 +1,240 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - navigation "Primary" [ref=e6]:
+        - link "Fernando Acevedo" [ref=e7] [cursor=pointer]:
+          - /url: "#home"
+        - generic [ref=e8]:
+          - list [ref=e9]:
+            - listitem [ref=e10]:
+              - link "Home" [ref=e11] [cursor=pointer]:
+                - /url: "#home"
+            - listitem [ref=e12]:
+              - link "Experience" [ref=e13] [cursor=pointer]:
+                - /url: "#experience"
+            - listitem [ref=e14]:
+              - link "Projects" [ref=e15] [cursor=pointer]:
+                - /url: "#projects"
+            - listitem [ref=e16]:
+              - link "Skills" [ref=e17] [cursor=pointer]:
+                - /url: "#skills"
+            - listitem [ref=e18]:
+              - link "Contact" [ref=e19] [cursor=pointer]:
+                - /url: "#contact"
+          - generic [ref=e20]:
+            - link "GitHub" [ref=e21] [cursor=pointer]:
+              - /url: https://github.com/fernando-ace
+            - link "LinkedIn" [ref=e22] [cursor=pointer]:
+              - /url: https://linkedin.com/in/fernando-ace
+            - link "Resume" [ref=e23] [cursor=pointer]:
+              - /url: /Portfolio-Website/resume/Resume.pdf
+    - main [ref=e24]:
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Software Engineering Portfolio
+        - heading "Fernando Acevedo" [level=1] [ref=e29]
+        - paragraph [ref=e30]
+        - paragraph [ref=e32]: Software Engineering student at Auburn University (B.S. expected May 2028) building production-ready systems across robotics, automation, full-stack products, and data pipelines.
+        - paragraph [ref=e33]: I ship practical software that improves team speed, product quality, and user experience.
+        - generic [ref=e34]:
+          - link "View Experience" [ref=e35] [cursor=pointer]:
+            - /url: "#experience"
+          - link "View Projects" [ref=e36] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Resume" [ref=e37] [cursor=pointer]:
+            - /url: /Portfolio-Website/resume/Resume.pdf
+        - generic [ref=e38]:
+          - link "GitHub" [ref=e39] [cursor=pointer]:
+            - /url: https://github.com/fernando-ace
+          - link "LinkedIn" [ref=e40] [cursor=pointer]:
+            - /url: https://linkedin.com/in/fernando-ace
+      - generic [ref=e42]:
+        - heading "Experience" [level=2] [ref=e44]
+        - generic [ref=e45]:
+          - article [ref=e46]:
+            - generic [ref=e47]:
+              - heading "Software Engineer Intern - Tennibot" [level=3] [ref=e48]
+              - generic [ref=e49]: Priority Experience
+            - paragraph [ref=e50]: Aug 2025 - Feb 2026 | Auburn, AL
+            - paragraph [ref=e51]: Built robotics provisioning, calibration, and data-labeling workflows to accelerate release cycles for autonomous tennis and pickleball robots.
+            - generic [ref=e52]:
+              - generic [ref=e53]: ~5% accuracy improvement
+              - generic [ref=e54]: 10,000+ labeled images
+              - generic [ref=e55]: Setup time reduced from hours to minutes
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - generic [ref=e59]: Designed automated provisioning pipelines for autonomous robots, reducing setup from hours to minutes.
+              - listitem [ref=e60]:
+                - generic [ref=e62]: Built containerized Linux calibration flows (Ubuntu 22.04, Docker, RViz), improving sensor and camera accuracy by ~5%.
+              - listitem [ref=e63]:
+                - generic [ref=e65]: Developed Python automation for video ingestion and CVAT-based labeling, generating 10,000+ labeled images.
+            - generic [ref=e66]:
+              - generic [ref=e67]: Python
+              - generic [ref=e68]: Docker
+              - generic [ref=e69]: ROS
+              - generic [ref=e70]: Linux
+              - generic [ref=e71]: OpenCV
+              - generic [ref=e72]: CVAT
+          - article [ref=e73]:
+            - heading "Data Analyst Intern - Altec" [level=3] [ref=e75]
+            - paragraph [ref=e76]: May 2025 - Aug 2025 | Birmingham, AL
+            - paragraph [ref=e77]: Modernized analytics operations by migrating dashboards and improving query efficiency for fast, dependable reporting.
+            - generic [ref=e78]:
+              - generic [ref=e79]: 90+ dashboards migrated
+              - generic [ref=e80]: 32% RAM reduction
+              - generic [ref=e81]: ~15 hours/week saved
+            - list [ref=e82]:
+              - listitem [ref=e83]:
+                - generic [ref=e85]: Migrated 90+ dashboards to Qlik Cloud.
+              - listitem [ref=e86]:
+                - generic [ref=e88]: Optimized SQL logic to reduce RAM usage by 32% while keeping sub-second latency.
+              - listitem [ref=e89]:
+                - generic [ref=e91]: Built custom JSON/CSS themes and integrated AI chatbot helpers to speed self-service analytics.
+            - generic [ref=e92]:
+              - generic [ref=e93]: Qlik Cloud
+              - generic [ref=e94]: SQL
+              - generic [ref=e95]: Python
+              - generic [ref=e96]: JSON
+              - generic [ref=e97]: CSS
+          - article [ref=e98]:
+            - heading "Data Analyst Intern - HICA" [level=3] [ref=e100]
+            - paragraph [ref=e101]: May 2024 - Aug 2024 | Homewood, AL
+            - paragraph [ref=e102]: Consolidated long-term client data into a relational model and delivered dashboards that improved operational visibility.
+            - generic [ref=e103]:
+              - generic [ref=e104]: 20+ years of data unified
+              - generic [ref=e105]: ~20% faster reporting
+            - list [ref=e106]:
+              - listitem [ref=e107]:
+                - generic [ref=e109]: Designed a relational database schema consolidating 20+ years of legacy data.
+              - listitem [ref=e110]:
+                - generic [ref=e112]: Built Tableau dashboards to improve outreach and operational visibility.
+            - generic [ref=e113]:
+              - generic [ref=e114]: Tableau
+              - generic [ref=e115]: SQL
+              - generic [ref=e116]: Python
+              - generic [ref=e117]: Data Modeling
+      - generic [ref=e119]:
+        - heading "Projects" [level=2] [ref=e121]
+        - generic [ref=e122]:
+          - article [ref=e123]:
+            - generic [ref=e124]:
+              - heading "TecsPacs" [level=3] [ref=e125]
+              - paragraph [ref=e126]: Full-stack snippet manager delivered across a web app, CLI, and VS Code extension using shared APIs and centralized authentication.
+              - generic [ref=e127]:
+                - generic [ref=e128]: React
+                - generic [ref=e129]: Node.js
+                - generic [ref=e130]: Express
+                - generic [ref=e131]: MongoDB
+                - generic [ref=e132]: Auth0
+              - button "Show details" [ref=e133] [cursor=pointer]
+              - link "GitHub" [ref=e135] [cursor=pointer]:
+                - /url: https://github.com/rtrevizo18/tecspacs
+          - article [ref=e136]:
+            - generic [ref=e137]:
+              - heading "TaskFlow" [level=3] [ref=e138]
+              - paragraph [ref=e139]: Task management platform with JWT-secured APIs and cloud deployment workflow across Vercel and Railway.
+              - generic [ref=e140]:
+                - generic [ref=e141]: React
+                - generic [ref=e142]: Spring Boot
+                - generic [ref=e143]: PostgreSQL
+                - generic [ref=e144]: JWT
+                - generic [ref=e145]: Vercel
+                - generic [ref=e146]: Railway
+              - button "Show details" [ref=e147] [cursor=pointer]
+              - link "GitHub" [ref=e149] [cursor=pointer]:
+                - /url: https://github.com/fernando-ace/my-spring-api
+          - article [ref=e150]:
+            - generic [ref=e151]:
+              - heading "ETL Pipeline" [level=3] [ref=e152]
+              - paragraph [ref=e153]: Python and Snowflake ETL pipeline processing 550k+ records with automated validation and observability logging.
+              - generic [ref=e154]:
+                - generic [ref=e155]: Python
+                - generic [ref=e156]: Snowflake
+                - generic [ref=e157]: ETL
+                - generic [ref=e158]: Data Validation
+                - generic [ref=e159]: Logging
+              - button "Show details" [ref=e160] [cursor=pointer]
+              - link "GitHub" [ref=e162] [cursor=pointer]:
+                - /url: https://github.com/fernando-ace/etl-pipeline-poc
+      - generic [ref=e164]:
+        - heading "Skills" [level=2] [ref=e166]
+        - generic [ref=e167]:
+          - article [ref=e168]:
+            - heading "Languages" [level=3] [ref=e169]
+            - list [ref=e170]:
+              - listitem [ref=e171]: Java
+              - listitem [ref=e172]: Python
+              - listitem [ref=e173]: JavaScript
+              - listitem [ref=e174]: TypeScript
+              - listitem [ref=e175]: SQL
+              - listitem [ref=e176]: Bash
+          - article [ref=e177]:
+            - heading "Frontend" [level=3] [ref=e178]
+            - list [ref=e179]:
+              - listitem [ref=e180]: React
+              - listitem [ref=e181]: Tailwind CSS
+              - listitem [ref=e182]: HTML
+              - listitem [ref=e183]: CSS
+          - article [ref=e184]:
+            - heading "Backend" [level=3] [ref=e185]
+            - list [ref=e186]:
+              - listitem [ref=e187]: Spring Boot
+              - listitem [ref=e188]: Node.js
+              - listitem [ref=e189]: Express
+              - listitem [ref=e190]: REST APIs
+              - listitem [ref=e191]: Auth0
+              - listitem [ref=e192]: JWT
+          - article [ref=e193]:
+            - heading "Data" [level=3] [ref=e194]
+            - list [ref=e195]:
+              - listitem [ref=e196]: PostgreSQL
+              - listitem [ref=e197]: MongoDB
+              - listitem [ref=e198]: Snowflake
+              - listitem [ref=e199]: Tableau
+              - listitem [ref=e200]: Qlik Cloud
+              - listitem [ref=e201]: ETL
+          - article [ref=e202]:
+            - heading "Tools" [level=3] [ref=e203]
+            - list [ref=e204]:
+              - listitem [ref=e205]: Docker
+              - listitem [ref=e206]: Linux
+              - listitem [ref=e207]: Git
+              - listitem [ref=e208]: Railway
+              - listitem [ref=e209]: Vercel
+              - listitem [ref=e210]: CVAT
+              - listitem [ref=e211]: RViz
+      - generic [ref=e213]:
+        - heading "Leadership and Awards" [level=2] [ref=e215]
+        - article [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - generic [ref=e220]: 3rd Place, ICPC Regional Competition at University of West Florida (2025).
+            - listitem [ref=e221]:
+              - generic [ref=e223]: President, Hoover High Robotics - led 50+ students and managed a $5K+ budget.
+            - listitem [ref=e224]:
+              - generic [ref=e226]: HSF Scholar.
+            - listitem [ref=e227]:
+              - generic [ref=e229]: Alabama Data Scholar.
+      - article [ref=e232]:
+        - heading "Contact" [level=2] [ref=e233]
+        - generic [ref=e234]:
+          - link "FernandoJosueAcevedo@gmail.com" [ref=e235] [cursor=pointer]:
+            - /url: mailto:FernandoJosueAcevedo@gmail.com
+          - link "GitHub" [ref=e236] [cursor=pointer]:
+            - /url: https://github.com/fernando-ace
+          - link "LinkedIn" [ref=e237] [cursor=pointer]:
+            - /url: https://linkedin.com/in/fernando-ace
+          - link "Resume" [ref=e238] [cursor=pointer]:
+            - /url: /Portfolio-Website/resume/Resume.pdf
+    - contentinfo [ref=e239]:
+      - generic [ref=e240]:
+        - paragraph [ref=e241]: $ echo "© 2026 Fernando Acevedo. All rights reserved."
+        - generic [ref=e242]:
+          - link "GitHub" [ref=e243] [cursor=pointer]:
+            - /url: https://github.com/fernando-ace
+          - link "LinkedIn" [ref=e244] [cursor=pointer]:
+            - /url: https://linkedin.com/in/fernando-ace
+          - link "Resume" [ref=e245] [cursor=pointer]:
+            - /url: /Portfolio-Website/resume/Resume.pdf
+        - paragraph [ref=e246]: Built for fast, accessible recruiting review.

@@ -1,0 +1,104 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - heading "OW3N" [level=1] [ref=e5]
+        - generic [ref=e7]: _
+        - generic [ref=e8]:
+          - link "github" [ref=e9] [cursor=pointer]:
+            - /url: https://github.com/owenstrength
+          - link "linkedin" [ref=e10] [cursor=pointer]:
+            - /url: https://linkedin.com/in/owen-strength
+          - link "email" [ref=e11] [cursor=pointer]:
+            - /url: mailto:owenstrength@gmail.com
+    - main [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e16]: $ "Once you stop learning, you start dying." - Albert Einstein
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: "- Good at ML, AI, Low Latency C++, and Competitive Programming."
+          - paragraph [ref=e20]: "- Computer Software Engineering Auburn University. (2022-2026)."
+          - paragraph [ref=e21]: "- Incoming Software Engineer at Optiver (Fall 2026)."
+          - paragraph [ref=e22]: "- Prev Software Engineer Intern at Chicago Trading Company (Summer 2025)."
+          - paragraph [ref=e23]: "- Awarded Undergraduate Research Fellowship at Auburn University (Fall 2025)."
+          - paragraph [ref=e24]: "- Honorable Mention for Outstanding Undergraduate Researcher Award from the Computing Research Association (2025)."
+          - paragraph [ref=e25]: "- President of Auburn's Competitive Programming Team (Fall 2024 - Present)."
+          - paragraph [ref=e26]: "- 1st Place at ICPC Regional at University West Florida Regional Competition (2023)."
+        - generic [ref=e27]:
+          - heading "Experience" [level=2] [ref=e28]
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - heading "- Software Engineer Intern - Market Data" [level=3] [ref=e31]
+              - paragraph [ref=e32]: "- Chicago Trading Company | Jun. 2025 – Aug. 2025"
+              - list [ref=e33]:
+                - listitem [ref=e34]:
+                  - generic [ref=e35]: "- Built a diagnostics tool using C++ 20 and Python to compare order book algorithms, enabling detection of data integrity issues in real-time market data pipelines."
+                - listitem [ref=e36]:
+                  - generic [ref=e37]: "- Designed and created a packet manipulation tool to stress test market data pipelines with dropped, duplicated, and reordered packets, improving system robustness."
+                - listitem [ref=e38]:
+                  - generic [ref=e39]: "- Completed intensive training in options theory, market making, and systematic trading strategies as part of internship program."
+            - generic [ref=e40]:
+              - heading "- Undergraduate Research Assistant - Machine Learning" [level=3] [ref=e41]
+              - paragraph [ref=e42]: "- Auburn University | Mar. 2024 – Jan. 2025"
+              - list [ref=e43]:
+                - listitem [ref=e44]:
+                  - generic [ref=e45]: "- Working under Auburn's Dr. Pan He, focusing on computer vision and urban infrastructure optimization"
+                - listitem [ref=e46]:
+                  - generic [ref=e47]: "- Focused on deep learning, reinforcement learning, and computer vision using OpenAI Gym, PyTorch, OpenCV"
+                - listitem [ref=e48]:
+                  - generic [ref=e49]: "- Designing a hyperrealistic traffic simulator for AI-driven traffic control optimization"
+                - listitem [ref=e50]:
+                  - generic [ref=e51]: "- Investigated training-free solutions using Vision-Language Models"
+            - generic [ref=e52]:
+              - heading "- Software Engineer Intern - Machine Learning" [level=3] [ref=e53]
+              - paragraph [ref=e54]: "- PRADCO Outdoor Brands - Moultrie Mobile | May. 2024 – Aug. 2024"
+              - list [ref=e55]:
+                - listitem [ref=e56]:
+                  - generic [ref=e57]: "- Designed ML model for animal re-identification using Python, Spark, MLflow, PyTorch"
+                - listitem [ref=e58]:
+                  - generic [ref=e59]: "- Implemented classification model handling 500+ images/second"
+                - listitem [ref=e60]:
+                  - generic [ref=e61]: "- Optimized ML inference speeds by 43% using Nvidia Triton Server and Kubernetes"
+            - generic [ref=e62]:
+              - heading "- Software Engineer Intern - Backend" [level=3] [ref=e63]
+              - paragraph [ref=e64]: "- PRADCO Outdoor Brands - Moultrie Mobile | May. 2023 – Aug. 2023"
+              - list [ref=e65]:
+                - listitem [ref=e66]:
+                  - generic [ref=e67]: "- Reduced image load times by 71% through backend optimization"
+                - listitem [ref=e68]:
+                  - generic [ref=e69]: "- Developed scalable API endpoints using .NET Core and Azure"
+            - generic [ref=e70]:
+              - heading "- Software Engineer Intern" [level=3] [ref=e71]
+              - paragraph [ref=e72]: "- Chorus Smart Secure | May. 2022 – Aug. 2022"
+              - list [ref=e73]:
+                - listitem [ref=e74]:
+                  - generic [ref=e75]: "- Developed internal tools for customer data management using React and Python"
+                - listitem [ref=e76]:
+                  - generic [ref=e77]: "- Designed a data analytics tool that located geographic regions for potential customers, resulting in a 12% increase in sales"
+        - generic [ref=e78]:
+          - heading "Projects" [level=2] [ref=e79]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - heading "- Person Re-Identification System" [level=3] [ref=e82]:
+                - text: "-"
+                - img [ref=e83]
+                - text: Person Re-Identification System
+              - paragraph [ref=e86]: "- Python, PyTorch"
+              - paragraph [ref=e87]: "- Created a Person re-identification system using modified ResNet18 on Market-1501 dataset, achieving 93.48% rank-1 accuracy and 78.46% mAP"
+              - link "- View Project" [ref=e88] [cursor=pointer]:
+                - /url: https://github.com/owenstrength/Person-ReID
+                - text: "- View Project"
+                - img [ref=e89]
+            - generic [ref=e93]:
+              - heading "- Image Captioning with Multiple Decoder Architectures" [level=3] [ref=e94]:
+                - text: "-"
+                - img [ref=e95]
+                - text: Image Captioning with Multiple Decoder Architectures
+              - paragraph [ref=e98]: "- Python, PyTorch"
+              - paragraph [ref=e99]: "- An evaluation of various decoder architectures (RNN, GRU, and LSTM) on the COCO 2017 dataset for image captioning"
+              - link "- View Project" [ref=e100] [cursor=pointer]:
+                - /url: https://github.com/owenstrength/Image-Captioning-with-Multiple-Decoder-Architectures
+                - text: "- View Project"
+                - img [ref=e101]
+    - contentinfo [ref=e105]:
+      - generic [ref=e106]: $ echo "© 2026 Owen Strength. All rights reserved."
+  - alert [ref=e107]

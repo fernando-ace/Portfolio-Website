@@ -1,0 +1,22 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TaskFlow app mockup">
+  <rect width="1200" height="700" fill="#08111D"/>
+  <rect x="42" y="48" width="1116" height="604" rx="24" fill="#111A2B" stroke="#263651"/>
+  <rect x="80" y="96" width="1040" height="58" rx="12" fill="#162744"/>
+  <rect x="90" y="112" width="220" height="26" rx="13" fill="#5EEAD4"/>
+  <rect x="330" y="112" width="160" height="26" rx="13" fill="#2E4670"/>
+  <rect x="510" y="112" width="160" height="26" rx="13" fill="#2E4670"/>
+  <rect x="690" y="112" width="160" height="26" rx="13" fill="#2E4670"/>
+  <rect x="870" y="112" width="220" height="26" rx="13" fill="#2E4670"/>
+  <rect x="80" y="184" width="320" height="430" rx="16" fill="#0C1528"/>
+  <rect x="440" y="184" width="320" height="430" rx="16" fill="#0C1528"/>
+  <rect x="800" y="184" width="320" height="430" rx="16" fill="#0C1528"/>
+  <rect x="102" y="220" width="200" height="20" rx="10" fill="#5EEAD4"/>
+  <rect x="462" y="220" width="190" height="20" rx="10" fill="#5EEAD4"/>
+  <rect x="822" y="220" width="220" height="20" rx="10" fill="#5EEAD4"/>
+  <rect x="102" y="262" width="274" height="70" rx="10" fill="#172A4A"/>
+  <rect x="102" y="348" width="274" height="70" rx="10" fill="#172A4A"/>
+  <rect x="462" y="262" width="274" height="70" rx="10" fill="#172A4A"/>
+  <rect x="462" y="348" width="274" height="70" rx="10" fill="#172A4A"/>
+  <rect x="822" y="262" width="274" height="70" rx="10" fill="#172A4A"/>
+  <text x="90" y="640" fill="#8FA1C7" font-family="Inter, Arial, sans-serif" font-size="22">JWT-secured task management with cloud deployment flow.</text>
+</svg>
