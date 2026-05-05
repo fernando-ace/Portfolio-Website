@@ -1,0 +1,19 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TecsPacs app mockup">
+  <rect width="1200" height="700" fill="#0A1020"/>
+  <rect x="48" y="50" width="1104" height="600" rx="24" fill="#101A33" stroke="#283654"/>
+  <rect x="90" y="94" width="300" height="512" rx="14" fill="#0B1328"/>
+  <rect x="430" y="94" width="674" height="72" rx="12" fill="#142142"/>
+  <rect x="430" y="188" width="674" height="418" rx="16" fill="#0B1328"/>
+  <rect x="114" y="124" width="180" height="20" rx="10" fill="#5EEAD4"/>
+  <rect x="114" y="165" width="236" height="14" rx="7" fill="#31466E"/>
+  <rect x="114" y="200" width="236" height="14" rx="7" fill="#31466E"/>
+  <rect x="114" y="235" width="236" height="14" rx="7" fill="#31466E"/>
+  <rect x="460" y="118" width="210" height="22" rx="11" fill="#5EEAD4"/>
+  <rect x="690" y="118" width="180" height="22" rx="11" fill="#2F4470"/>
+  <rect x="890" y="118" width="180" height="22" rx="11" fill="#2F4470"/>
+  <rect x="460" y="220" width="282" height="156" rx="12" fill="#142142"/>
+  <rect x="760" y="220" width="314" height="156" rx="12" fill="#142142"/>
+  <rect x="460" y="392" width="614" height="184" rx="12" fill="#142142"/>
+  <text x="470" y="325" fill="#B9C8E7" font-family="Inter, Arial, sans-serif" font-size="28">Unified Snippet Workspace</text>
+  <text x="470" y="490" fill="#8FA1C7" font-family="Inter, Arial, sans-serif" font-size="24">API, CLI, and editor extension in one system.</text>
+</svg>

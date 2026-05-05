@@ -29,5 +29,26 @@
     </a>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      window.setTimeout(() => {
+        const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+        const isLocalDev = localHosts.has(window.location.hostname);
+        if (isLocalDev) {
+          return;
+        }
+
+        if (window.__PORTFOLIO_APP_BOOTED__) {
+          return;
+        }
+
+        const base = "/Portfolio-Website/";
+        const stylesheet = document.createElement("link");
+        stylesheet.rel = "stylesheet";
+        stylesheet.href = `${base}assets/main.css`;
+        document.head.appendChild(stylesheet);
+
+        import(/* @vite-ignore */ `${base}assets/main.js`);
+      }, 0);
+    </script>
   </body>
 </html>
