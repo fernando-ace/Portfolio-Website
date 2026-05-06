@@ -18,7 +18,7 @@ export const profile = {
     "Software Engineering student at Auburn University (B.S. expected May 2028) building production-ready systems across robotics, automation, full-stack products, and data pipelines.",
   value:
     "I ship practical software that improves team speed, product quality, and user experience.",
-  resumeHref: `${baseUrl}resume/Resume.pdf`,
+  resumeHref: "resume/Resume.pdf",
   githubHref: "https://github.com/fernando-ace",
   linkedinHref: "https://linkedin.com/in/fernando-ace"
 };
