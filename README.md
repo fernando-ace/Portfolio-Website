@@ -25,13 +25,14 @@ Build output is generated in `dist/`.
 
 ## GitHub Pages deployment
 
-This repo is configured for project pages at:
+This repo is configured for a GitHub Pages custom domain at:
 
-`https://fernando-ace.github.io/Portfolio-Website/`
+`https://fernando-ace.com/`
 
 Key config:
 
-- `vite.config.js` uses `base: "/Portfolio-Website/"`
+- `vite.config.js` uses `base: "/"`
+- `public/CNAME` preserves the custom domain during Pages deployments
 - App is single-page section navigation (no client router)
 
 ### Deploy manually
