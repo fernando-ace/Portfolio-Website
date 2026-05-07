@@ -56,9 +56,9 @@ export default function App() {
           </div>
         </section>
         <ExperienceSection />
+        <LeadershipSection />
         <ProjectsSection />
         <SkillsSection />
-        <LeadershipSection />
         <ContactSection />
       </main>
       <Footer />

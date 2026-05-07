@@ -4,6 +4,7 @@ import { profile } from "../data/portfolioData";
 const navItems = [
   { href: "#home", label: "Home" },
   { href: "#experience", label: "Experience" },
+  { href: "#leadership", label: "Leadership & Awards" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" }
