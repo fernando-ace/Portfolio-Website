@@ -55,6 +55,11 @@ body {
   }
 }
 
+.hero-eyebrow {
+  font-size: clamp(0.58rem, 2.7vw, 0.75rem);
+  letter-spacing: 0.12em;
+}
+
 .hero-glow {
   position: absolute;
   left: 50%;

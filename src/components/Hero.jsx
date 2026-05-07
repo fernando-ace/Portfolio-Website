@@ -70,7 +70,7 @@ export function Hero() {
       <div className="hero-glow" aria-hidden="true" />
       <div className="mx-auto max-w-6xl rounded-2xl border border-line bg-surface/75 p-8 shadow-soft md:p-12">
         <div>
-          <p className="mb-5 inline-flex rounded-full border border-accent/30 bg-accent-soft px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+          <p className="hero-eyebrow mb-5 inline-flex whitespace-nowrap rounded-full border border-accent/30 bg-accent-soft px-3 py-1 text-xs font-semibold uppercase text-accent">
             Software Engineering Portfolio
           </p>
           <h1 className="text-balance text-4xl font-extrabold leading-tight text-text md:text-6xl">{profile.name}</h1>
@@ -82,7 +82,6 @@ export function Hero() {
             />
           </p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted md:text-lg">{profile.summary}</p>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">{profile.value}</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a className="btn-primary" href="#experience">

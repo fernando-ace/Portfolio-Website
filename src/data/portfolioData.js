@@ -7,7 +7,8 @@ export const profile = {
     "Full-Stack Software Engineer",
     "Software Engineer Intern",
     "Researcher",
-    "Competetive Programmer",
+    "Competitive Programmer",
+    "ACM President",
     "Student",
     "Problem Solver",
     "Lifelong Learner"
@@ -15,9 +16,7 @@ export const profile = {
   location: "Auburn, AL",
   email: "FernandoJosueAcevedo@gmail.com",
   summary:
-    "Software Engineering student at Auburn University (B.S. expected May 2028) building production-ready systems across robotics, automation, full-stack products, and data pipelines.",
-  value:
-    "I ship practical software that improves team speed, product quality, and user experience.",
+    "Software Engineering student at Auburn University (B.S. expected May 2028, GPA 3.52) building production-ready systems across robotics, automation, full-stack products, and data pipelines.",
   resumeHref: "resume/Resume.pdf",
   githubHref: "https://github.com/fernando-ace",
   linkedinHref: "https://linkedin.com/in/fernando-ace"
@@ -127,8 +126,12 @@ export const skillGroups = [
 ];
 
 export const leadership = [
-  "3rd Place, ICPC Regional Competition at University of West Florida (2025).",
-  "President, Hoover High Robotics - led 50+ students and managed a $5K+ budget.",
+  "President, Auburn Association for Computing Machinery (ACM).",
+  "3rd Place, ICPC 2025 University of West Florida Regional.",
   "HSF Scholar.",
-  "Alabama Data Scholar."
+  "AP Scholar with Distinction.",
+  "National Hispanic & African American Recognition.",
+  "3rd Place, TSA Robotics State.",
+  "Alabama Data Scholar.",
+  "Hoover High Robotics President - led 50+ students, mentored peers, and managed a $5K+ budget."
 ];
