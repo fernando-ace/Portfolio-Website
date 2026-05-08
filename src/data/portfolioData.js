@@ -16,7 +16,7 @@ export const profile = {
   location: "Auburn, AL",
   email: "FernandoJosueAcevedo@gmail.com",
   summary:
-    "Software Engineering student at Auburn University (B.S. expected May 2028, GPA 3.52) building production-ready systems across robotics, automation, full-stack products, and data pipelines.",
+    "Software Engineering student at Auburn University (B.S. expected May 2028) building production-ready systems across robotics, automation, full-stack products, and data pipelines.",
   resumeHref: "resume/Resume.pdf",
   githubHref: "https://github.com/fernando-ace",
   linkedinHref: "https://linkedin.com/in/fernando-ace"
