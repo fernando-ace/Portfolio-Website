@@ -42,33 +42,45 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        background: #05070d;
+        color: #e8edf9;
+        font-family: Inter, system-ui, "Segoe UI", sans-serif;
+      }
+    </style>
+    <script>
+      (() => {
+        const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+        const isLocalDev = localHosts.has(window.location.hostname);
+
+        if (!isLocalDev) {
+          document.write('<link rel="stylesheet" href="/assets/main.css">');
+          document.write('<script type="module" src="/assets/main.js"><\/script>');
+        }
+      })();
+    </script>
   </head>
   <body>
     <a class="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-[100] focus:rounded-md focus:bg-text focus:px-3 focus:py-2 focus:text-page" href="#main-content">
       Skip to main content
     </a>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script type="module">
-      window.setTimeout(() => {
-        const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
-        const isLocalDev = localHosts.has(window.location.hostname);
-        if (isLocalDev) {
-          return;
-        }
+    <script>
+      const localHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+      const isLocalDev = localHosts.has(window.location.hostname);
 
-        if (window.__PORTFOLIO_APP_BOOTED__) {
-          return;
-        }
-
-        const base = "/";
-        const stylesheet = document.createElement("link");
-        stylesheet.rel = "stylesheet";
-        stylesheet.href = `${base}assets/main.css`;
-        document.head.appendChild(stylesheet);
-
-        import(/* @vite-ignore */ `${base}assets/main.js`);
-      }, 0);
+      if (isLocalDev) {
+        const devEntry = document.createElement("script");
+        devEntry.type = "module";
+        devEntry.src = "/src/main.jsx";
+        document.body.appendChild(devEntry);
+      }
     </script>
   </body>
 </html>
