@@ -71,6 +71,22 @@ export const experience = [
 
 export const projects = [
   {
+    name: "Prediction Market Intelligence Platform",
+    description:
+      "Market research platform that ingests Kalshi market and order book snapshots, normalizes pricing data, and evaluates signal quality with forward-return and cohort analysis.",
+    highlights: [
+      "Built research modules for binary arbitrage, related-market grouping, spread tightening, passive quote markout, and fill proxy behavior.",
+      "Tested whether paper edges survived execution constraints instead of stopping at headline pricing signals.",
+      "Added 240+ passing tests and ran 50,000-snapshot passive-fill simulations, surfacing low fillability as the key bottleneck despite favorable markouts."
+    ],
+    stack: ["TypeScript", "Next.js", "Prisma", "PostgreSQL", "Kalshi API", "Vitest"],
+    image: `${baseUrl}projects/etl.svg`,
+    imageAlt: "Research platform analyzing prediction market snapshots",
+    githubHref: "https://github.com/fernando-ace/prediction-market-intelligence-platform",
+    liveHref: "mailto:FernandoJosueAcevedo@gmail.com?subject=Prediction%20Market%20Intelligence%20Platform%20Demo%20Request",
+    liveLabel: "Walkthrough"
+  },
+  {
     name: "TecsPacs",
     description:
       "Full-stack snippet manager delivered across a web app, CLI, and VS Code extension using shared APIs and centralized authentication.",
