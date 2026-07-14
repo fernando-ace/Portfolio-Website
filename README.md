@@ -33,19 +33,15 @@ Key config:
 
 - `vite.config.js` uses `base: "/"`
 - `public/CNAME` preserves the custom domain during Pages deployments
+- GitHub Pages uses **GitHub Actions** as its deployment source
+- `.github/workflows/deploy.yml` builds and publishes the generated `dist/` artifact on every push to `main`
 - App is single-page section navigation (no client router)
 
-### Deploy manually
+### Deploy with GitHub Actions
 
-1. Run `npm install`
-2. Run `npm run build`
-3. Publish `dist/` to `gh-pages` branch (or configure Pages to deploy from GitHub Actions artifact)
+Push to `main`, or run the workflow manually from the Actions tab. The workflow installs dependencies, builds the Vite app, and deploys `dist/` to GitHub Pages.
 
-### Deploy with GitHub Actions (included)
-
-1. In GitHub repo settings, enable Pages and set source to **GitHub Actions**.
-2. Push to `main`.
-3. Workflow `.github/workflows/deploy.yml` will build and deploy automatically.
+The checked-in root `assets/` files are legacy artifacts and are not the production deployment source.
 
 ## Editing content
 
