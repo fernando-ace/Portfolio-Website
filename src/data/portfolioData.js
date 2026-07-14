@@ -1,5 +1,3 @@
-const baseUrl = import.meta.env.BASE_URL;
-
 export const profile = {
   name: "Fernando Acevedo",
   role: "Full-Stack Software Engineer",
@@ -71,6 +69,34 @@ export const experience = [
 
 export const projects = [
   {
+    name: "EventFilm",
+    description:
+      "Mobile-first private beta for QR-based disposable-camera albums that lets hosts create events and guests upload photos without an account.",
+    highlights: [
+      "Built a React, Express, and Prisma product with host authentication, event analytics, moderation, QR sharing, and ZIP downloads.",
+      "Kept the guest flow frictionless with nickname-based entry, accountless uploads, reveal controls, and shared event recaps.",
+      "Added Supabase-backed private photo storage plus web and Expo host experiences through shared API and domain packages."
+    ],
+    stack: ["TypeScript", "React", "Express", "Prisma", "PostgreSQL", "Supabase", "Expo"],
+    githubHref: "https://github.com/fernando-ace/College-Disposable-Camera",
+    liveHref: "https://eventfilm.vercel.app/",
+    liveLabel: "Live Beta"
+  },
+  {
+    name: "Auburn Academic Planner",
+    description:
+      "Degree Works-native academic planning assistant that turns current progress and planned-path PDFs into advisor-safe preparation notes.",
+    highlights: [
+      "Parses Degree Works audits and plans for credits, incomplete requirements, planned courses, confidence, and supporting evidence.",
+      "Compares a student's planned path with remaining requirements while preserving substitutions, transfer credit, and unclear items for advisor review.",
+      "Pairs deterministic planning tools with source-grounded Auburn academic chat using curated university sources and Gemini File Search."
+    ],
+    stack: ["TypeScript", "Next.js", "Gemini", "RAG", "PDF Parsing", "Vitest"],
+    githubHref: "https://github.com/fernando-ace/Auburn-Academic-Planner",
+    liveHref: "https://auburn-academic-planner.vercel.app",
+    liveLabel: "Live App"
+  },
+  {
     name: "Prediction Market Intelligence Platform",
     description:
       "Market research platform that ingests Kalshi market and order book snapshots, normalizes pricing data, and evaluates signal quality with forward-return and cohort analysis.",
@@ -80,26 +106,23 @@ export const projects = [
       "Added 240+ passing tests and ran 50,000-snapshot passive-fill simulations, surfacing low fillability as the key bottleneck despite favorable markouts."
     ],
     stack: ["TypeScript", "Next.js", "Prisma", "PostgreSQL", "Kalshi API", "Vitest"],
-    image: `${baseUrl}projects/etl.svg`,
-    imageAlt: "Research platform analyzing prediction market snapshots",
     githubHref: "https://github.com/fernando-ace/prediction-market-intelligence-platform",
-    liveHref: "mailto:FernandoJosueAcevedo@gmail.com?subject=Prediction%20Market%20Intelligence%20Platform%20Demo%20Request",
-    liveLabel: "Walkthrough"
+    liveHref: "mailto:FernandoJosueAcevedo@gmail.com?subject=Prediction%20Market%20Intelligence%20Platform%20Walkthrough",
+    liveLabel: "Request Walkthrough"
   },
   {
-    name: "TecsPacs",
+    name: "Income Ladder Snapshot",
     description:
-      "Full-stack snippet manager delivered across a web app, CLI, and VS Code extension using shared APIs and centralized authentication.",
+      "Privacy-first advisor tool that turns an uploaded Income Ladder workbook into a concise client-ready preview and printable report.",
     highlights: [
-      "Unified auth and API model across three client experiences.",
-      "Maintained one source of truth for snippets and developer workflows."
+      "Parses Excel workbooks entirely in the browser and summarizes cash flow, distributions, shortfalls, withdrawals, and maturities.",
+      "Keeps private client data in React memory only, with no backend, database, analytics, cookies, or browser storage.",
+      "Delivers interactive charts and a compact PDF-ready print layout as a fully static application."
     ],
-    stack: ["React", "Node.js", "Express", "MongoDB", "Auth0"],
-    image: `${baseUrl}projects/tecspacs.svg`,
-    imageAlt: "Mock dashboard for TecsPacs snippet manager",
-    githubHref: "https://github.com/rtrevizo18/tecspacs",
-    liveHref: "mailto:FernandoJosueAcevedo@gmail.com?subject=TecsPacs%20Live%20Demo%20Request",
-    liveLabel: "Demo On Request"
+    stack: ["TypeScript", "React", "Vite", "Tailwind CSS", "Recharts", "SheetJS"],
+    githubHref: "https://github.com/fernando-ace/Income-Ladder-Snapshot",
+    liveHref: "https://fernando-ace.github.io/Income-Ladder-Snapshot/",
+    liveLabel: "Live App"
   },
   {
     name: "TaskFlow",
@@ -110,26 +133,46 @@ export const projects = [
       "Implemented authenticated API access with JWT and PostgreSQL-backed persistence."
     ],
     stack: ["React", "Spring Boot", "PostgreSQL", "JWT", "Vercel", "Railway"],
-    image: `${baseUrl}projects/taskflow.svg`,
-    imageAlt: "TaskFlow board with sprint columns",
-    githubHref: "https://github.com/fernando-ace/my-spring-api",
-    liveHref: "mailto:FernandoJosueAcevedo@gmail.com?subject=TaskFlow%20Live%20Demo%20Request",
-    liveLabel: "Demo On Request"
+    githubHref: "https://github.com/fernando-ace/my-spring-api"
+  },
+  {
+    name: "Brown-Kopel Study Room Reservations",
+    description:
+      "Mobile-first prototype for a faster Auburn Engineering study-room reservation experience across Brown-Kopel and other facilities.",
+    highlights: [
+      "Designed room discovery around capacity, floor, availability status, and quick reservation time slots.",
+      "Built mock confirmation, upcoming reservations, validated special-event requests, and communication preferences.",
+      "Used local mock data to demonstrate the end-to-end student experience without connecting to production university services."
+    ],
+    stack: ["TypeScript", "React", "Vite", "Responsive UI", "GitHub Pages"],
+    githubHref: "https://github.com/fernando-ace/Study-Room-Reservations",
+    liveHref: "https://fernando-ace.github.io/Study-Room-Reservations/",
+    liveLabel: "Live Prototype"
+  },
+  {
+    name: "Vehicle Sales Profitability Analysis",
+    description:
+      "Reproducible notebook analysis of vehicle sales profitability by make, body type, margin, mileage, and vehicle age.",
+    highlights: [
+      "Calculates total and average profit, profit margin, median odometer readings, and make/model coverage from a sample CSV.",
+      "Visualizes top-performing vehicle makes and packages the workflow for one-click use in Google Colab.",
+      "Keeps the public demo self-contained while documenting how the original analysis used Snowflake-hosted data."
+    ],
+    stack: ["Python", "Jupyter", "Pandas", "Matplotlib", "Seaborn", "Snowflake"],
+    githubHref: "https://github.com/fernando-ace/vehicle-sales-profitability-analysis",
+    liveHref: "https://colab.research.google.com/github/fernando-ace/vehicle-sales-profitability-analysis/blob/main/vehicle_sales_profitability_analysis.ipynb",
+    liveLabel: "Open in Colab"
   },
   {
     name: "ETL Pipeline",
     description:
-      "Python and Snowflake ETL pipeline processing 550k+ records with automated validation and observability logging.",
+      "Python and Snowpark proof-of-concept that cleans and transforms vehicle sales data into an analytics-ready Snowflake table.",
     highlights: [
-      "Automated quality checks to catch schema and value drift early.",
-      "Added repeatable logging to improve reliability and debugging in data runs."
+      "Standardizes complex sale dates, casts odometer values, validates rows, and calculates profit from selling price and market value.",
+      "Includes 10,000-row sample input and output files so the transformation can be inspected without the private full dataset."
     ],
-    stack: ["Python", "Snowflake", "ETL", "Data Validation", "Logging"],
-    image: `${baseUrl}projects/etl.svg`,
-    imageAlt: "ETL pipeline flow with staging and warehouse layers",
-    githubHref: "https://github.com/fernando-ace/etl-pipeline-poc",
-    liveHref: "mailto:FernandoJosueAcevedo@gmail.com?subject=ETL%20Pipeline%20Demo%20Request",
-    liveLabel: "Walkthrough"
+    stack: ["Python", "Snowpark", "Snowflake", "ETL", "Data Validation"],
+    githubHref: "https://github.com/fernando-ace/etl-pipeline-poc"
   }
 ];
 

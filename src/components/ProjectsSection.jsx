@@ -50,6 +50,11 @@ export function ProjectsSection() {
                     <a className="btn-ghost text-sm" href={project.githubHref} target="_blank" rel="noreferrer">
                       GitHub
                     </a>
+                    {project.liveHref ? (
+                      <a className="btn-primary text-sm" href={project.liveHref} target="_blank" rel="noreferrer">
+                        {project.liveLabel}
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </article>
