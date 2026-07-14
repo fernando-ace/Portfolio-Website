@@ -51,7 +51,7 @@ export default function App() {
         <section className="px-3 pb-4 md:px-6 md:pb-8">
           <div className="mx-auto max-w-6xl rounded-xl border border-line bg-surface/60 px-5 py-4 text-center shadow-soft">
             <blockquote className="text-base italic text-muted md:text-lg">
-              "You get what you repeat." — James Clear.
+              "Until death, all defeat is psychological." - Jocko Willink
             </blockquote>
           </div>
         </section>
