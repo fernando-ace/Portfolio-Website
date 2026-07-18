@@ -3,6 +3,7 @@ export const profile = {
   role: "Full-Stack Software Engineer",
   roleOptions: [
     "Full-Stack Software Engineer",
+    "Incoming SWE Intern @ OCV",
     "Software Engineer Intern",
     "Researcher",
     "Competitive Programmer",
@@ -21,6 +22,14 @@ export const profile = {
 };
 
 export const experience = [
+  {
+    company: "OCV, LLC",
+    role: "Incoming Software Engineering Intern",
+    period: "Jul 2026 - Present",
+    location: "Opelika, AL · On-site",
+    summary:
+      "Incoming software engineering internship at OCV, beginning in July 2026 in Opelika, Alabama."
+  },
   {
     company: "Tennibot",
     role: "Software Engineer Intern",
