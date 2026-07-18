@@ -1,65 +1,55 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { projects } from "../data/portfolioData";
+import { ProjectDetailCard } from "./projects/ProjectDetailCard";
+import { ProjectTimeline } from "./projects/ProjectTimeline";
 
 export function ProjectsSection() {
-  const [expanded, setExpanded] = useState({});
+  const [activeIndex, setActiveIndex] = useState(0);
+  const tabRefs = useRef([]);
+  const activeProject = projects[activeIndex];
+
+  function selectProject(index) {
+    setActiveIndex(index);
+  }
+
+  function handleTimelineKeyDown(event, index) {
+    const lastIndex = projects.length - 1;
+    let nextIndex = index;
+
+    if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+      nextIndex = index === lastIndex ? 0 : index + 1;
+    } else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+      nextIndex = index === 0 ? lastIndex : index - 1;
+    } else if (event.key === "Home") {
+      nextIndex = 0;
+    } else if (event.key === "End") {
+      nextIndex = lastIndex;
+    } else {
+      return;
+    }
+
+    event.preventDefault();
+    selectProject(nextIndex);
+    tabRefs.current[nextIndex]?.focus();
+  }
 
   return (
-    <section id="projects" className="px-3 py-16 md:px-6 md:py-24">
+    <section id="projects" className="scroll-mt-24 px-3 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8">
           <h2 className="section-title">Projects</h2>
+          <p className="section-copy">Hover, focus, or tap a project to explore it.</p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project) => {
-            const isExpanded = Boolean(expanded[project.name]);
-            return (
-              <article key={project.name} className="reveal overflow-hidden rounded-xl border border-line bg-surface shadow-soft" data-reveal>
-                <div className="p-5">
-                  <h3 className="text-xl font-semibold text-text">{project.name}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">{project.description}</p>
-
-                  <div className="mt-4 flex flex-wrap gap-2 text-xs text-muted">
-                    {project.stack.map((item) => (
-                      <span key={item} className="rounded-md border border-line bg-page/50 px-2 py-1">{item}</span>
-                    ))}
-                  </div>
-
-                  <button
-                    type="button"
-                    className="mt-4 text-sm font-semibold text-accent underline-offset-4 hover:underline"
-                    onClick={() => setExpanded((prev) => ({ ...prev, [project.name]: !isExpanded }))}
-                    aria-expanded={isExpanded}
-                  >
-                    {isExpanded ? "Hide details" : "Show details"}
-                  </button>
-
-                  {isExpanded && (
-                    <ul className="mt-3 space-y-2 text-sm text-text">
-                      {project.highlights.map((highlight) => (
-                        <li key={highlight} className="flex gap-2">
-                          <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  <div className="mt-5 flex gap-2">
-                    <a className="btn-ghost text-sm" href={project.githubHref} target="_blank" rel="noreferrer">
-                      GitHub
-                    </a>
-                    {project.liveHref ? (
-                      <a className="btn-primary text-sm" href={project.liveHref} target="_blank" rel="noreferrer">
-                        {project.liveLabel}
-                      </a>
-                    ) : null}
-                  </div>
-                </div>
-              </article>
-            );
-          })}
+        <div className="reveal grid items-start gap-6 md:grid-cols-[minmax(18rem,0.78fr)_minmax(0,1.42fr)] md:gap-8" data-reveal>
+          <ProjectTimeline
+            activeIndex={activeIndex}
+            onKeyDown={handleTimelineKeyDown}
+            onSelect={selectProject}
+            projects={projects}
+            tabRefs={tabRefs}
+          />
+          <ProjectDetailCard project={activeProject} />
         </div>
       </div>
     </section>

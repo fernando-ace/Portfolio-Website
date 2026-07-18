@@ -122,16 +122,26 @@ export const projects = [
   {
     name: "Income Ladder Snapshot",
     description:
-      "Privacy-first advisor tool that turns an uploaded Income Ladder workbook into a concise client-ready preview and printable report.",
+      "Privacy-first prototype built for a Wells Fargo academic advisor who tasked me with turning an Income Ladder workbook into a concise client-ready preview and printable report.",
     highlights: [
       "Parses Excel workbooks entirely in the browser and summarizes cash flow, distributions, shortfalls, withdrawals, and maturities.",
       "Keeps private client data in React memory only, with no backend, database, analytics, cookies, or browser storage.",
       "Delivers interactive charts and a compact PDF-ready print layout as a fully static application."
     ],
     stack: ["TypeScript", "React", "Vite", "Tailwind CSS", "Recharts", "SheetJS"],
-    githubHref: "https://github.com/fernando-ace/Income-Ladder-Snapshot",
-    liveHref: "https://fernando-ace.github.io/Income-Ladder-Snapshot/",
-    liveLabel: "Live App"
+    githubHref: "https://github.com/fernando-ace/Income-Ladder-Snapshot"
+  },
+  {
+    name: "Tecspacs",
+    description:
+      "48-hour hackathon project I built with three teammates: a developer tool for organizing and reusing code snippets and mini-packages across a web app, CLI, and VS Code extension.",
+    highlights: [
+      "Built a sticky-note React and Tailwind interface for creating and browsing TEC code snippets and PAC mini-packages.",
+      "Connected the web app, JavaScript CLI, and VS Code extension to one Express and MongoDB backend.",
+      "Added Auth0 token-based authentication and Gemini-assisted code summarization and improvement workflows."
+    ],
+    stack: ["JavaScript", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Auth0", "Gemini"],
+    githubHref: "https://github.com/rtrevizo18/tecspacs"
   },
   {
     name: "TaskFlow",
