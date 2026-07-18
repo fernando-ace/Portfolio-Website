@@ -105,6 +105,10 @@ body {
   min-width: 0;
 }
 
+.project-mobile-navigation {
+  display: none;
+}
+
 .project-timeline-track {
   position: relative;
   display: flex;
@@ -195,11 +199,64 @@ body {
 }
 
 @media (max-width: 767px) {
+  .project-mobile-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-mobile-position {
+    color: #e8edf9;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+
+  .project-mobile-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .project-mobile-button {
+    min-height: 2.5rem;
+    border: 1px solid #33405d;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: #e8edf9;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    transition: border-color 180ms ease, color 180ms ease, opacity 180ms ease;
+  }
+
+  .project-mobile-button:hover:not(:disabled) {
+    border-color: #5eead4;
+    color: #5eead4;
+  }
+
+  .project-mobile-button:focus-visible {
+    outline: 2px solid #5eead4;
+    outline-offset: 2px;
+  }
+
+  .project-mobile-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.38;
+  }
+
   .project-timeline-scroll {
     overflow-x: auto;
-    padding: 0.125rem 0 0.5rem;
-    scrollbar-color: #33405d transparent;
-    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
+    padding: 0.125rem 0 0.25rem;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-timeline-scroll::-webkit-scrollbar {
+    display: none;
   }
 
   .project-timeline-track {

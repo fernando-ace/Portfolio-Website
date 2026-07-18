@@ -38,10 +38,13 @@ export function ProjectsSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-8">
           <h2 className="section-title">Projects</h2>
-          <p className="section-copy">Hover, focus, or tap a project to explore it.</p>
+          <p className="section-copy">
+            <span className="hidden md:inline">Hover, focus, or tap a project to explore it.</span>
+            <span className="md:hidden">Swipe the timeline or use Previous and Next to explore each project.</span>
+          </p>
         </div>
 
-        <div className="reveal grid items-start gap-6 md:grid-cols-[minmax(18rem,0.78fr)_minmax(0,1.42fr)] md:gap-8" data-reveal>
+        <div className="grid items-start gap-6 md:grid-cols-[minmax(18rem,0.78fr)_minmax(0,1.42fr)] md:gap-8">
           <ProjectTimeline
             activeIndex={activeIndex}
             onKeyDown={handleTimelineKeyDown}
