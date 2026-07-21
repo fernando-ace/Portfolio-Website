@@ -87,7 +87,6 @@ export const projects = [
       "Added Supabase-backed private photo storage plus web and Expo host experiences through shared API and domain packages."
     ],
     stack: ["TypeScript", "React", "Express", "Prisma", "PostgreSQL", "Supabase", "Expo"],
-    githubHref: "https://github.com/fernando-ace/College-Disposable-Camera",
     liveHref: "https://eventfilm.vercel.app/",
     liveLabel: "Live Beta"
   },

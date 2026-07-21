@@ -42,9 +42,11 @@ export function ProjectDetailCard({ project }) {
       </div>
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <a className="btn-ghost min-w-28 text-sm" href={project.githubHref} target="_blank" rel="noreferrer">
-          GitHub
-        </a>
+        {project.githubHref ? (
+          <a className="btn-ghost min-w-28 text-sm" href={project.githubHref} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        ) : null}
         {project.liveHref ? (
           <a className="btn-primary min-w-28 text-sm" href={project.liveHref} target="_blank" rel="noreferrer">
             {project.liveLabel}
