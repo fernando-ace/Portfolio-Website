@@ -88,7 +88,7 @@ export const projects = [
     ],
     stack: ["TypeScript", "React", "Express", "Prisma", "PostgreSQL", "Supabase", "Expo"],
     liveHref: "https://eventfilm.vercel.app/",
-    liveLabel: "Live Beta"
+    liveLabel: "Live App"
   },
   {
     name: "Auburn Academic Planner",
