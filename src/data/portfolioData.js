@@ -80,11 +80,11 @@ export const projects = [
   {
     name: "EventFilm",
     description:
-      "Mobile-first private beta for QR-based disposable-camera albums that lets hosts create events and guests upload photos without an account.",
+      "Web-first beta for shared event photo albums: hosts create one guest link, people upload from their phones without an account or app, and everyone returns to a shared recap.",
     highlights: [
-      "Built a React, Express, and Prisma product with host authentication, event analytics, moderation, QR sharing, and ZIP downloads.",
-      "Kept the guest flow frictionless with nickname-based entry, accountless uploads, reveal controls, and shared event recaps.",
-      "Added Supabase-backed private photo storage plus web and Expo host experiences through shared API and domain packages."
+      "Built an account-free guest flow with camera or photo-library uploads, optional names, personal upload deletion, photo hearts, and story-ready recap exports.",
+      "Added authenticated host tools for event creation, guest-link sharing, moderation, engagement analytics, and four event styles including Color Hunt and timed Memory Capsule reveals.",
+      "Unified the React/Vite web app and Expo host companion through shared TypeScript domain and API packages, backed by Express, Prisma, PostgreSQL, and private Supabase Storage."
     ],
     stack: ["TypeScript", "React", "Express", "Prisma", "PostgreSQL", "Supabase", "Expo"],
     liveHref: "https://eventfilm.vercel.app/",
