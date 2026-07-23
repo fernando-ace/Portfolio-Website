@@ -91,6 +91,34 @@ export const projects = [
     liveLabel: "Live App"
   },
   {
+    name: "FollowThrough",
+    description:
+      "Interactive concept for an SMS-first reminder agent that helps people follow through on commitments through simulated check-ins and a live waitlist.",
+    highlights: [
+      "Built a browser-based commitment flow with deterministic handling for completed tasks, progress updates, snoozes, and unclear replies.",
+      "Created matching Next.js and Cloudflare Workers experiences backed by PostgreSQL and Prisma locally and Cloudflare D1 and Drizzle for the hosted waitlist.",
+      "Retained a tested server foundation for authentication, durable scheduling, Twilio messaging, QStash dispatch, account controls, and safe opt-out handling."
+    ],
+    stack: ["TypeScript", "Next.js", "React", "Prisma", "PostgreSQL", "Cloudflare D1", "Drizzle"],
+    githubHref: "https://github.com/fernando-ace/FollowThrough",
+    liveHref: "https://followthrough-reminders.fernandojosueacevedo.chatgpt.site",
+    liveLabel: "Live Demo"
+  },
+  {
+    name: "JudgeLock",
+    description:
+      "Test-integrity firewall for coding agents that protects trusted tests and binds completion evidence to the exact repository state that was checked.",
+    highlights: [
+      "Records a trusted Git baseline and blocks test deletion, weakening, skipped tests, protected-path changes, and policy downgrades.",
+      "Binds verification receipts to the baseline, HEAD, index, worktree, relevant untracked files, trusted commands, runtime, and output hashes.",
+      "Ships CLI hooks and CI integration with a benchmark covering 30 known attacks and 10 legitimate controls across disposable repositories."
+    ],
+    stack: ["TypeScript", "Node.js", "Git", "Vitest", "GitHub Actions", "npm"],
+    githubHref: "https://github.com/fernando-ace/JudgeLock",
+    liveHref: "https://www.npmjs.com/package/judgelock",
+    liveLabel: "npm Package"
+  },
+  {
     name: "Auburn Academic Planner",
     description:
       "Degree Works-native academic planning assistant that turns current progress and planned-path PDFs into advisor-safe preparation notes.",
