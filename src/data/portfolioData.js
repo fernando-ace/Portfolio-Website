@@ -4,7 +4,7 @@ export const profile = {
   roleOptions: [
     "Full-Stack Software Engineer",
     "Incoming SWE Intern @ OCV",
-    "Software Engineer Intern",
+    "Software Engineering Intern",
     "Researcher",
     "Competitive Programmer",
     "ACM President",
@@ -32,18 +32,18 @@ export const experience = [
   },
   {
     company: "Tennibot",
-    role: "Software Engineer Intern",
-    period: "Aug 2025 - Feb 2026",
+    role: "Software Engineering Intern",
+    period: "Aug 2025 - Dec 2025",
     location: "Auburn, AL",
     summary:
       "Built robotics provisioning, calibration, and data-labeling workflows to accelerate release cycles for autonomous tennis and pickleball robots.",
     metrics: ["~5% accuracy improvement", "10,000+ labeled images", "Setup time reduced from hours to minutes"],
     highlights: [
-      "Designed automated provisioning pipelines for autonomous robots, reducing setup from hours to minutes.",
-      "Built containerized Linux calibration flows (Ubuntu 22.04, Docker, RViz), improving sensor and camera accuracy by ~5%.",
-      "Developed Python automation for video ingestion and CVAT-based labeling, generating 10,000+ labeled images."
+      "Automated Linux provisioning for autonomous robots, covering microSD imaging, filesystem setup, and secure cloud registration, reducing manual setup from multi-hour work to a repeatable minute-scale workflow.",
+      "Built Dockerized Ubuntu 22.04 calibration workflows with RViz and robot sensor scripts, improving sensor and camera accuracy by ~5% while making camera and rotation calibration reproducible across deployments.",
+      "Developed Python, OpenCV, and CVAT SDK data pipelines to extract video frames, upload datasets, and support annotation of 10,000+ training images for perception model development."
     ],
-    tech: ["Python", "Docker", "ROS", "Linux", "OpenCV", "CVAT"]
+    tech: ["Python", "Docker", "ROS", "Linux", "OpenCV", "CVAT", "RViz"]
   },
   {
     company: "Altec",
@@ -54,14 +54,14 @@ export const experience = [
       "Modernized analytics operations by migrating dashboards and improving query efficiency for fast, dependable reporting.",
     metrics: ["90+ dashboards migrated", "32% RAM reduction", "~15 hours/week saved"],
     highlights: [
-      "Migrated 90+ dashboards to Qlik Cloud.",
-      "Optimized SQL logic to reduce RAM usage by 32% while keeping sub-second latency.",
-      "Built custom JSON/CSS themes and integrated AI chatbot helpers to speed self-service analytics."
+      "Optimized Qlik and SQL data models over 13M-row datasets, reducing memory footprint by 32% while keeping dashboard response times under one second.",
+      "Migrated 90+ legacy Qlik analytics assets to Qlik Cloud, rebuilding data models and validating dashboard outputs with BI stakeholders.",
+      "Built custom JSON/CSS Qlik themes and configured AI Insight Advisor business logic and chatbot helpers to standardize and speed self-service, client-facing analytics workflows."
     ],
-    tech: ["Qlik Cloud", "SQL", "Python", "JSON", "CSS"]
+    tech: ["Qlik Cloud", "SQL", "Python", "JSON", "CSS", "AI Insight Advisor"]
   },
   {
-    company: "HICA",
+    company: "¡HICA! (Hispanic and Immigrant Center of Alabama)",
     role: "Data Analyst Intern",
     period: "May 2024 - Aug 2024",
     location: "Homewood, AL",
@@ -69,8 +69,8 @@ export const experience = [
       "Consolidated long-term client data into a relational model and delivered dashboards that improved operational visibility.",
     metrics: ["20+ years of data unified", "~20% faster reporting"],
     highlights: [
-      "Designed a relational database schema consolidating 20+ years of legacy data.",
-      "Built Tableau dashboards to improve outreach and operational visibility."
+      "Designed a normalized relational database schema consolidating 20+ years of legacy program data into a scalable reporting foundation.",
+      "Built Tableau dashboards tracking outreach, program outcomes, and service metrics, giving staff a central view of community impact data."
     ],
     tech: ["Tableau", "SQL", "Python", "Data Modeling"]
   }
@@ -80,15 +80,18 @@ export const projects = [
   {
     name: "EventFilm",
     description:
-      "Web-first beta for shared event photo albums: hosts create one guest link, people upload from their phones without an account or app, and everyone returns to a shared recap.",
+      "Production iOS and web app for shared event photo albums: hosts create one guest link, people upload candid photos from their phones without an account or app download, and everyone returns to a shared recap.",
     highlights: [
+      "Designed, built, and launched EventFilm on the iOS App Store and web in one summer, enabling hosts to collect candid event photos in a shared album through a link while guests contribute without accounts or app downloads.",
       "Built an account-free guest flow with camera or photo-library uploads, optional names, personal upload deletion, photo hearts, and story-ready recap exports.",
-      "Added authenticated host tools for event creation, guest-link sharing, moderation, engagement analytics, and four event styles including Color Hunt and timed Memory Capsule reveals.",
-      "Unified the React/Vite web app and Expo host companion through shared TypeScript domain and API packages, backed by Express, Prisma, PostgreSQL, and private Supabase Storage."
+      "Delivered host authentication, event creation and controls, guest-link sharing, content moderation, engagement analytics, curated highlights, and four event styles including Color Hunt and timed Memory Capsule reveals.",
+      "Engineered the production iOS and web stack with React Native, Expo, TypeScript, Node.js, Express, Prisma, PostgreSQL, private Supabase object storage, and RevenueCat; unified shared domain and API packages and deployed with Vercel and Railway."
     ],
-    stack: ["TypeScript", "React", "Express", "Prisma", "PostgreSQL", "Supabase", "Expo"],
-    liveHref: "https://eventfilm.vercel.app/",
-    liveLabel: "Live App"
+    stack: ["TypeScript", "React", "React Native", "Expo", "Node.js", "Express", "Prisma", "PostgreSQL", "Supabase", "RevenueCat"],
+    appStoreHref: "https://apps.apple.com/us/app/eventfilm/id6793253546",
+    appStoreLabel: "App Store",
+    liveHref: "https://eventfilm.app/",
+    liveLabel: "Website"
   },
   {
     name: "FollowThrough",
@@ -224,14 +227,15 @@ export const projects = [
 
 export const skillGroups = [
   { label: "Languages", items: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "Bash"] },
-  { label: "Frontend", items: ["React", "Tailwind CSS", "HTML", "CSS"] },
+  { label: "Frontend", items: ["React", "React Native", "Expo", "Next.js", "Tailwind CSS", "HTML", "CSS"] },
   { label: "Backend", items: ["Spring Boot", "Node.js", "Express", "REST APIs", "Auth0", "JWT"] },
-  { label: "Data", items: ["PostgreSQL", "MongoDB", "Snowflake", "Tableau", "Qlik Cloud", "ETL"] },
-  { label: "Tools", items: ["Docker", "Linux", "Git", "Railway", "Vercel", "CVAT", "RViz"] }
+  { label: "Data", items: ["PostgreSQL", "MongoDB", "Snowflake", "Prisma", "Pandas", "OpenCV", "Tableau", "Qlik Cloud", "ETL", "Kalshi API"] },
+  { label: "Tools", items: ["Docker", "Linux", "Git", "Expo EAS", "RevenueCat", "Railway", "Vercel", "Supabase", "Firebase", "CVAT", "RViz", "Viam", "Vitest"] }
 ];
 
 export const leadership = [
   "President, Auburn Association for Computing Machinery (ACM).",
+  "Founder and President, Agentic Programming Club.",
   "3rd Place, ICPC 2025 University of West Florida Regional.",
   "HSF Scholar.",
   "AP Scholar with Distinction.",
