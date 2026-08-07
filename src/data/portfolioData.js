@@ -4,12 +4,16 @@ export const profile = {
   roleOptions: [
     "Full-Stack Software Engineer",
     "Incoming SWE Intern @ OCV",
+    "App Developer",
     "Software Engineering Intern",
     "Researcher",
     "Competitive Programmer",
     "ACM President",
+    "Agentic Programming Club Founder and President",
+    "AI Research Fellow",
     "Student",
     "Problem Solver",
+    "Devloper",
     "Lifelong Learner"
   ],
   location: "Auburn, AL",
