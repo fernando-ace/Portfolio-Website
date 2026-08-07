@@ -8,7 +8,7 @@ export function SkillsSection() {
           <h2 className="section-title">Skills</h2>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {skillGroups.map((group) => (
             <article key={group.label} className="reveal rounded-xl border border-line bg-surface p-4 shadow-soft" data-reveal>
               <h3 className="text-sm font-semibold uppercase tracking-[0.08em] text-accent">{group.label}</h3>

@@ -226,11 +226,10 @@ export const projects = [
 ];
 
 export const skillGroups = [
-  { label: "Languages", items: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "Bash"] },
-  { label: "Frontend", items: ["React", "React Native", "Expo", "Next.js", "Tailwind CSS", "HTML", "CSS"] },
-  { label: "Backend", items: ["Spring Boot", "Node.js", "Express", "REST APIs", "Auth0", "JWT"] },
-  { label: "Data", items: ["PostgreSQL", "MongoDB", "Snowflake", "Prisma", "Pandas", "OpenCV", "Tableau", "Qlik Cloud", "ETL", "Kalshi API"] },
-  { label: "Tools", items: ["Docker", "Linux", "Git", "Expo EAS", "RevenueCat", "Railway", "Vercel", "Supabase", "Firebase", "CVAT", "RViz", "Viam", "Vitest"] }
+  { label: "Languages", items: ["Java", "Python", "SQL", "JavaScript", "TypeScript", "Bash"] },
+  { label: "Frameworks/Libraries", items: ["React Native", "Expo", "Next.js", "React", "Node.js", "Express", "Spring", "Pandas", "OpenCV", "Tailwind", "Vitest"] },
+  { label: "Data and Systems", items: ["PostgreSQL", "MongoDB", "Snowflake", "Prisma", "Docker", "Linux", "REST APIs", "Kalshi API"] },
+  { label: "Developer Tools", items: ["Git", "Expo EAS", "RevenueCat", "CVAT", "RViz", "Viam", "Supabase", "Firebase", "Vercel", "Railway"] }
 ];
 
 export const leadership = [
