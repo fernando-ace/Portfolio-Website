@@ -3,7 +3,7 @@ export const profile = {
   role: "Full-Stack Software Engineer",
   roleOptions: [
     "Full-Stack Software Engineer",
-    "Incoming SWE Intern @ OCV",
+    "SWE Intern @ OCV",
     "App Developer",
     "Software Engineering Intern",
     "Researcher",
@@ -28,7 +28,7 @@ export const profile = {
 export const experience = [
   {
     company: "OCV, LLC",
-    role: "Incoming Software Engineering Intern",
+    role: "Software Engineering Intern",
     period: "Jul 2026 - Present",
     location: "Opelika, AL · On-site",
     summary:
