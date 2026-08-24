@@ -29,10 +29,10 @@ export const experience = [
   {
     company: "OCV, LLC",
     role: "Software Engineering Intern",
-    period: "Jul 2026 - Present",
-    location: "Opelika, AL · On-site",
+    period: "Aug 2026 - Present",
+    location: "Opelika, AL",
     summary:
-      "Incoming software engineering internship at OCV, beginning in July 2026 in Opelika, Alabama."
+      "Software engineering internship at OCV."
   },
   {
     company: "Tennibot",
