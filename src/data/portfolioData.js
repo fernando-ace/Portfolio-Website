@@ -251,7 +251,7 @@ export const projects = [
 ];
 
 export const skillGroups = [
-  { label: "Languages", items: ["Java", "Python", "SQL", "JavaScript", "TypeScript", "Bash"] },
+  { label: "Languages", items: ["Java", "Python", "JavaScript", "TypeScript", "C++", "x86 Assembly", "SQL", "Bash"] },
   { label: "Frameworks/Libraries", items: ["React Native", "Expo", "Next.js", "React", "Node.js", "Express", "Spring", "Pandas", "OpenCV", "Tailwind", "Vitest"] },
   { label: "Data and Systems", items: ["PostgreSQL", "MongoDB", "Snowflake", "Prisma", "Docker", "Linux", "REST APIs", "Kalshi API"] },
   { label: "Developer Tools", items: ["Git", "Expo EAS", "RevenueCat", "CVAT", "RViz", "Viam", "Supabase", "Firebase", "Vercel", "Railway"] }
