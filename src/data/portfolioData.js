@@ -32,7 +32,14 @@ export const experience = [
     period: "Aug 2026 - Present",
     location: "Opelika, AL",
     summary:
-      "Software engineering internship at OCV."
+      "Configured, validated, and shipped custom iOS and Android applications, from client requirements through app store review.",
+    metrics: ["50+ apps configured", "300+ apps validated", "100+ releases and re-releases shipped"],
+    highlights: [
+      "Authored production-ready JSON configurations for 50+ custom iOS and Android applications by translating client requirements into feature layouts, content, and application behavior for native Swift and Kotlin generation.",
+      "Validated 300+ new and rebuilt applications across iOS TestFlight and Android APK environments, identifying and resolving hundreds of functional defects, client-requested changes, and release blockers through multi-team QA cycles.",
+      "Shipped 100+ iOS and Android releases and re-releases by managing App Store Connect and Google Play submission workflows, verifying store configurations, and guiding builds through platform review."
+    ],
+    tech: ["JSON", "iOS", "Android", "TestFlight", "App Store Connect", "Google Play"]
   },
   {
     company: "Tennibot",
