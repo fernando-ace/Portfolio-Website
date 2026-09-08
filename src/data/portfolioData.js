@@ -105,6 +105,20 @@ export const projects = [
     liveLabel: "Website"
   },
   {
+    name: "Auburn Market",
+    description:
+      "Mobile and web marketplace for Auburn students to buy and sell items, find subleases, and connect with roommates through verified Auburn accounts.",
+    highlights: [
+      "Built searchable marketplace listings with photo uploads, favorites, seller controls, and sold or leased status updates.",
+      "Created a dedicated housing hub for subleases, lease takeovers, roommates, and housing requests, with filters for dates, budget, and amenities.",
+      "Added private buyer and seller messaging with realtime updates, unread counts, and in-app notifications.",
+      "Implemented verified @auburn.edu signup, row-level access controls, and reporting, blocking, and moderation workflows."
+    ],
+    stack: ["TypeScript", "React Native", "Expo", "Supabase", "PostgreSQL", "TanStack Query"],
+    liveHref: "https://the-auburn-market.expo.app/",
+    liveLabel: "Website"
+  },
+  {
     name: "FollowThrough",
     description:
       "Interactive concept for an SMS-first reminder agent that helps people follow through on commitments through simulated check-ins and a live waitlist.",
