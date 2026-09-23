@@ -89,6 +89,18 @@ export const experience = [
 
 export const projects = [
   {
+    name: "SyncState",
+    description:
+      "Type-safe state management library that keeps one authoritative Electron state store synchronized across main and sandboxed renderer processes, with React hooks.",
+    highlights: [
+      "Routes typed reads, writes, and subscriptions through a narrow contextBridge API while keeping the canonical state in Electron's main process.",
+      "Synchronizes changed keys across subscribed windows and cleans up renderer subscriptions when their webContents are destroyed.",
+      "Includes a renderer cache and React hook that avoid loading-only renders and guard against stale initial reads overwriting newer subscription events."
+    ],
+    stack: ["TypeScript", "Electron", "React", "IPC", "Vite", "Vitest", "tsup"],
+    githubHref: "https://github.com/fernando-ace/syncstate"
+  },
+  {
     name: "EventFilm",
     description:
       "Production iOS and web app for shared event photo albums: hosts create one guest link, people upload candid photos from their phones without an account or app download, and everyone returns to a shared recap.",
@@ -147,18 +159,6 @@ export const projects = [
     githubHref: "https://github.com/fernando-ace/JudgeLock",
     liveHref: "https://www.npmjs.com/package/judgelock",
     liveLabel: "npm Package"
-  },
-  {
-    name: "SyncState",
-    description:
-      "Type-safe state management library that keeps one authoritative Electron state store synchronized across main and sandboxed renderer processes, with React hooks.",
-    highlights: [
-      "Routes typed reads, writes, and subscriptions through a narrow contextBridge API while keeping the canonical state in Electron's main process.",
-      "Synchronizes changed keys across subscribed windows and cleans up renderer subscriptions when their webContents are destroyed.",
-      "Includes a renderer cache and React hook that avoid loading-only renders and guard against stale initial reads overwriting newer subscription events."
-    ],
-    stack: ["TypeScript", "Electron", "React", "IPC", "Vite", "Vitest", "tsup"],
-    githubHref: "https://github.com/fernando-ace/syncstate"
   },
   {
     name: "Auburn Academic Planner",
