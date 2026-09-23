@@ -48,12 +48,17 @@ export function ProjectDetailCard({ project }) {
           </a>
         ) : null}
         {project.appStoreHref ? (
-          <a className="btn-ghost min-w-28 text-sm" href={project.appStoreHref} target="_blank" rel="noreferrer">
+          <a className="btn-primary min-w-28 text-sm" href={project.appStoreHref} target="_blank" rel="noreferrer">
             {project.appStoreLabel ?? "App Store"}
           </a>
         ) : null}
         {project.liveHref ? (
-          <a className="btn-primary min-w-28 text-sm" href={project.liveHref} target="_blank" rel="noreferrer">
+          <a
+            className={`${project.appStoreHref ? "btn-ghost" : "btn-primary"} min-w-28 text-sm`}
+            href={project.liveHref}
+            target="_blank"
+            rel="noreferrer"
+          >
             {project.liveLabel}
           </a>
         ) : null}

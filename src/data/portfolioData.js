@@ -115,6 +115,8 @@ export const projects = [
       "Implemented verified @auburn.edu signup, row-level access controls, and reporting, blocking, and moderation workflows."
     ],
     stack: ["TypeScript", "React Native", "Expo", "Supabase", "PostgreSQL", "TanStack Query"],
+    appStoreHref: "https://apps.apple.com/us/app/auburn-market/id6793007218",
+    appStoreLabel: "App Store",
     liveHref: "https://the-auburn-market.expo.app/",
     liveLabel: "Website"
   },
